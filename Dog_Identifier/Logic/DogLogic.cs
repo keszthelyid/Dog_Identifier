@@ -42,7 +42,7 @@ namespace Dog_Identifier.Logic
                 {
                     Dog Dog = Repository.GetDogByName(DogNames[i]).GetCopy();
                     
-                    ToReturn.Dogs[i] = Dog;                   
+                    ToReturn.Dogs[i] = Dog;
                     ToReturn.Dogs[i].PhotoData = File.ReadAllBytes(Path.Combine("Dog_Photos", Dog.Name + ".jpg"));
                 }
 
